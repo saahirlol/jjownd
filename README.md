@@ -12,3 +12,35 @@ The application is Dockerized for easy installation and setup:
 ## Usage
 Access the application through a web browser on port 80. The web interface allows for the creation and viewing of moodboards.
 
+
+## Running with Docker
+
+1.  Run the Docker container, mounting a local directory to `/src` in the container:
+   ```bash
+   docker run -p 80:80 -v /path/to/local/src:/src ghcr.io/saahirlol/jjownd:main
+   ```
+
+Replace `/path/to/local/src` with the path to your local directory containing the images.
+
+## Running with Docker Compose
+
+Create a `docker-compose.yml` file with the following content:
+
+```yaml
+version: '3'
+services:
+  jjownd:
+    image: ghcr.io/saahirlol/jjownd:main
+    ports:
+      - "80:80"
+    volumes:
+      - /path/to/local/src:/src
+```
+
+Then run the application using:
+
+```bash
+docker-compose up
+```
+
+Again, replace `/path/to/local/src` with the path to your local directory. These instructions will ensure that the `jjownd` application runs correctly with the necessary image and directory settings.
