@@ -15,7 +15,7 @@ Access the application through a web browser on port 80. The web interface allow
 
 ## Running with Docker
 
-1.  Run the Docker container, mounting a local directory to `/src` in the container:
+Run the Docker container, mounting a local directory to `/src` in the container:
    ```bash
    docker run -p 80:80 -v /path/to/local/src:/src ghcr.io/saahirlol/jjownd:main
    ```
