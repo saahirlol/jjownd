@@ -1,7 +1,7 @@
 # jjownd
 
 ## Description
-jjownd is a dynamically generated moodboard web application, built using Python and Flask. It serves an interactive page where users can view or create moodboards.
+jjownd is a dynamically generated moodboard web application, built using Python and Flask. It serves an non-interactive page where users can view all images passsed to the /src directrory.
 
 ## Installation
 The application is Dockerized for easy installation and setup:
