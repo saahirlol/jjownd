@@ -37,10 +37,10 @@ services:
       - /path/to/local/src:/src
 ```
 
+Replace `/path/to/local/src` with the path to your local directory containing the images.
+
 Then run the application using:
 
 ```bash
 docker-compose up
 ```
-
-Again, replace `/path/to/local/src` with the path to your local directory. These instructions will ensure that the `jjownd` application runs correctly with the necessary image and directory settings.
